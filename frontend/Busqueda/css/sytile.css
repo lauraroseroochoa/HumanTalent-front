@@ -10,7 +10,7 @@ body {
 
 .banner {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background-color: #022859;
     height: 120px;

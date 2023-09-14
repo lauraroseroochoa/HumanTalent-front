@@ -92,4 +92,53 @@ body {
     cursor: pointer;
     color: #022859;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.btn-perfil::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    background-color: #022859;
+    transition: .5s;;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.btn-perfil:hover{
+    transition: 0.2s;
+    color: #f2f2f2;
+}
+
+.btn-perfil:hover::before{
+    width: 100%;
+}
+
+.btn-ubicacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    background-color: #022859;
+    transition: .5s;;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.btn-ubicacion:hover::before{
+    width: 100%;
+}
+
+.btn-ubicacion:hover{
+    transition: 0.2s;
+    color: #f2f2f2  ;
 }

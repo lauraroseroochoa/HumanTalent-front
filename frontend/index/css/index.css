@@ -1,105 +1,125 @@
-
 * {
     margin: 0;
-    padding: 10;
+    padding: 0;
     font-family: 'poppins', sans-serif;
 }
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: #022859;
-    justify-content: end;
-    color: white;
-    width: 100%;
-    height: 200px;
-}
-#img1 {
-    border-radius: 100px;
-    position: absolute;
-    top: 10PX;
-    margin: 30px 100px 200px 160px;
-    justify-content: start;
-    align-items: start;
+
+body {
+    background-color: #f2f2f2;
 }
 
-.header1 {
-    height: 20vh;
-    position: relative;
-    text-align: center;
+.banner {
+    display: flex;
+    background-color: #022859;
+    justify-content: space-between;
+    align-items: center;
+    color: #f2f2f2;
+    height: 160px;
+    padding: 0px 40px;
+}
+
+.banner h1 {
+    font-size: 30pt;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.btns-login {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer {
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    border: none;
+    width: 110px;
+    height: 35px;
+    font-size: 11pt;
+    padding: 10px;  
+    background-color: white;
+    cursor: pointer;
+    color: #022859;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.informacion {
+    height: 83.1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt {
+    margin: 50px 10%;
+    border: none;
+    width: 400px;
+    height: 200px;
+    font-size: 25pt;
+    padding: 20px;
+    background-color: white;
+    cursor: pointer;
+    color: #d92579;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-oferta::before {
+    content: "";
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-
-    background-color: #022859;
-    text-align: center;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
     color: white;
+    background-color: #022859;
+    transition: .5s;;
+    border-radius: 10px;
+    z-index: -1;
 }
 
-.but {
-    border-radius: 2px;
-    color: #ffffff;
-    border: #0487D9;
-    background: #D92579;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    cursor: pointer;
-    margin: 10px 10px;
+.btn-oferta:hover{
+    transition: 0.2s;
+    color: #f2f2f2;
 }
 
-.encabezado {
-    position: relative;
+.btn-oferta:hover::before{
     width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: end
 }
 
-.section1 {
+.btn-empresa::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    background-color: #022859;
+    transition: .5s;;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.btn-empresa:hover::before{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 100px;
-    padding: 100px 10px;
 }
 
-.but1 {
-    border-radius: 5px;
-    color: #000000;
-    border: 2px solid #022859;
-    background: #0487D9;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-
+.btn-empresa:hover{
+    transition: 0.2s;
+    color: #f2f2f2  ;
 }
 
-.but2 {
-    border-radius: 5px;
-    color: #000000;
-    border: 2px solid #022859;
-    background: #0487D9;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    /* margin: 400px 5px 250px 250px; */
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-
+.btn:hover {
+    opacity: 0.9;
 }
