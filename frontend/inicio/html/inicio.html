@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Postulacion</title>
+    <link rel="stylesheet" href="../css/inicio.css">
 </head>
 <body>
     <header class="banner">
@@ -14,8 +14,8 @@
             </a>
         </div>
         <div class="links">
-            <a href="">Inicio</a>
-            <a href="../../Busqueda/html/busqueda.html">Ofertas</a>
+            <a href="./inicio.html">Inicio</a>
+            <a href="../../Postulacion/html/postulacio.html">Postulaciones</a>
             <button class="user" id="mostrarLista">
                 <img src="../../Perfil/img/user.svg" alt="user" width="30px">
                 <p>Usuario</p>
@@ -29,61 +29,36 @@
         </li>
     </ul>
     <main class="informacion">
-        <aside class="busqueda">
-            <label for="search" class="search">
-                <input id="search" type="search" placeholder="Buscar por cargo, ocupacion, ubicacion ó empresa" class="input-search">
-            </label>
-            <button class="btn-search">
-                <img class="search-img" src="../../Busqueda/img/search.svg" alt="search" width="30px">
-            </button>
-        </aside>
-        <section class="post">
-            <div class="postulacion">
-                <h2>Mis Postulaciones</h2>
-                <div class="tabla">
-                    <table class="subtabla">
-                        <thead>
-                            <tr class="header">
-                                <th class="head">Postulacion</th>
-                                <th class="head">Codigo de Solicitud</th>
-                                <th class="head">Cargo</th>
-                                <th class="head">Empresa</th>
-                                <th class="head">Estado</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="body">
-                                <td>5231050</td>
-                                <td>5231050</td>
-                                <td>Programacion de Software</td>
-                                <td>Sena</td>
-                                <td>Activa</td>
-                            </tr>
-                            <tr class="body body1">
-                                <td>5231050</td>
-                                <td>5231050</td>
-                                <td>Programacion de Software</td>
-                                <td>Sena</td>
-                                <td>Activa</td>
-                            </tr>
-                            <tr class="body">
-                                <td>5231050</td>
-                                <td>5231050</td>
-                                <td>Programacion de Software</td>
-                                <td>Globant </td>
-                                <td>finalizado</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="btn">
-                    <a href="" >
-                        <button class="hoja-vida">Hoja de vida</button>
-                    </a>
-                </div>
-            </div>
+        <section class="informacion1">
+            <h2>Buscar ofertas</h2>
+            <aside class="busqueda">
+                <label for="search" class="search">
+                    <input id="search" type="search" placeholder="Buscar por cargo, ocupacion, ubicacion ó empresa" class="input-search">
+                </label>
+                <button class="btn-search">
+                    <picture>
+                        <img class="search-img" src="../../Busqueda/img/search.svg" alt="search" width="30px">
+                    </picture>
+                </button>
+            </aside>
+            <aside class="btns">
+                <a href="#">
+                    <button class="btn btn-perfil">
+                        Ofertas disponibles segun tu perfil
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-ubicacion">
+                        Ofertas disponibles cerca de tu area
+                    </button>
+                </a>
+            </aside>
+
         </section>
     </main>
+    <footer>
+
+    </footer>
     <script src="../js/script.js"></script>
 </body>
 </html>
